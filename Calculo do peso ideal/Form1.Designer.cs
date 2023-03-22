@@ -48,9 +48,9 @@ namespace Calculo_do_peso_ideal
             this.gbxSexo.Controls.Add(this.rbnMasculino);
             this.gbxSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbxSexo.Location = new System.Drawing.Point(18, 13);
-            this.gbxSexo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxSexo.Margin = new System.Windows.Forms.Padding(4);
             this.gbxSexo.Name = "gbxSexo";
-            this.gbxSexo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxSexo.Padding = new System.Windows.Forms.Padding(4);
             this.gbxSexo.Size = new System.Drawing.Size(240, 53);
             this.gbxSexo.TabIndex = 0;
             this.gbxSexo.TabStop = false;
@@ -62,24 +62,23 @@ namespace Calculo_do_peso_ideal
             this.rbnFeminino.AutoSize = true;
             this.rbnFeminino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbnFeminino.Location = new System.Drawing.Point(129, 23);
-            this.rbnFeminino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbnFeminino.Margin = new System.Windows.Forms.Padding(4);
             this.rbnFeminino.Name = "rbnFeminino";
-            this.rbnFeminino.Size = new System.Drawing.Size(108, 25);
+            this.rbnFeminino.Size = new System.Drawing.Size(81, 20);
             this.rbnFeminino.TabIndex = 1;
             this.rbnFeminino.Text = "Feminino";
             this.rbnFeminino.UseVisualStyleBackColor = true;
+            this.rbnFeminino.CheckedChanged += new System.EventHandler(this.rbnFeminino_CheckedChanged);
             // 
             // rbnMasculino
             // 
             this.rbnMasculino.AutoSize = true;
-            this.rbnMasculino.Checked = true;
             this.rbnMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbnMasculino.Location = new System.Drawing.Point(8, 23);
-            this.rbnMasculino.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbnMasculino.Margin = new System.Windows.Forms.Padding(4);
             this.rbnMasculino.Name = "rbnMasculino";
-            this.rbnMasculino.Size = new System.Drawing.Size(116, 25);
+            this.rbnMasculino.Size = new System.Drawing.Size(87, 20);
             this.rbnMasculino.TabIndex = 0;
-            this.rbnMasculino.TabStop = true;
             this.rbnMasculino.Text = "Masculino";
             this.rbnMasculino.UseVisualStyleBackColor = true;
             this.rbnMasculino.CheckedChanged += new System.EventHandler(this.rbnMasculino_CheckedChanged);
@@ -99,7 +98,7 @@ namespace Calculo_do_peso_ideal
             // 
             this.txtAltura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAltura.Location = new System.Drawing.Point(278, 38);
-            this.txtAltura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAltura.Margin = new System.Windows.Forms.Padding(4);
             this.txtAltura.Name = "txtAltura";
             this.txtAltura.Size = new System.Drawing.Size(81, 22);
             this.txtAltura.TabIndex = 2;
@@ -123,7 +122,7 @@ namespace Calculo_do_peso_ideal
             this.txtPesoIdeal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPesoIdeal.ForeColor = System.Drawing.Color.Red;
             this.txtPesoIdeal.Location = new System.Drawing.Point(143, 114);
-            this.txtPesoIdeal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPesoIdeal.Margin = new System.Windows.Forms.Padding(4);
             this.txtPesoIdeal.Name = "txtPesoIdeal";
             this.txtPesoIdeal.ReadOnly = true;
             this.txtPesoIdeal.Size = new System.Drawing.Size(83, 22);
@@ -133,7 +132,7 @@ namespace Calculo_do_peso_ideal
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(260, 85);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(99, 71);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +151,7 @@ namespace Calculo_do_peso_ideal
             this.Controls.Add(this.lblAltura);
             this.Controls.Add(this.gbxSexo);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPesoIdeal";
             this.Text = "Cálculo do peso ideal";
             this.gbxSexo.ResumeLayout(false);

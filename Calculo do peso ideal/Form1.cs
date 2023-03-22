@@ -60,6 +60,14 @@ namespace Calculo_do_peso_ideal
             SetPesoIdeal();
         }
 
-       
+        private void rbnFeminino_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton rbn = (RadioButton)sender;
+            if (rbn.Checked)
+            {
+                rbnSelecionado = rbn;
+                SetPesoIdeal();
+            }
+        }
     }
 }
